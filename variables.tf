@@ -19,9 +19,6 @@ variable "project_id" {
   type        = string
   default     = "avian-amulet-378416"
 }
-variable "Google_Credentials" { 
-  type = string 
-}
 variable "prefix" {
   description = "Prefix used to generate the bucket name."
   type        = string
