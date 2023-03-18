@@ -29,7 +29,7 @@ variable "prefix" {
 variable "names" {
   description = "Bucket name suffixes."
   type        = list(string)
-  default     = ['sami','henry']
+  default     = ["sami","henry"]
 }
 
 variable "randomize_suffix" {
