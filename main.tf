@@ -35,7 +35,9 @@ locals {
     ]
   ])
 }
-
+provider "google" {
+  credentials=var.Google_Credentials
+}
 resource "google_storage_bucket" "buckets" {
   for_each = local.names_set
 
