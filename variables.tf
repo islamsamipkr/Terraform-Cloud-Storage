@@ -17,6 +17,7 @@
 variable "project_id" {
   description = "Bucket project id."
   type        = string
+  default     = "avian-amulet-378416"
 }
 
 variable "prefix" {
@@ -28,6 +29,7 @@ variable "prefix" {
 variable "names" {
   description = "Bucket name suffixes."
   type        = list(string)
+  default     = ['sami','henry']
 }
 
 variable "randomize_suffix" {
@@ -39,7 +41,7 @@ variable "randomize_suffix" {
 variable "location" {
   description = "Bucket location."
   type        = string
-  default     = "EU"
+  default     = "northamerica-northeast-1"
 }
 
 variable "storage_class" {
